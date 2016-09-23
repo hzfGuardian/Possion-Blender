@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 
 # Possion-Blender
 
@@ -26,17 +26,17 @@ A personal implement of a Siggraph Paper **Poisson Image Editing**## UsageNo
 
 In my project, I solve the equation by using **Gaussian-Sadel** Iteration to acclerate. That means when we solve 
 
-$$AX=b$$
+<img src="http://www.forkosh.com/mathtex.cgi? \Large AX=b">
 
 we can construct an iteration as:
 
-$$X^{k+1}=B_G X^{k}+f_G$$
+<img src="http://www.forkosh.com/mathtex.cgi? \Large X^{k+1}=B_G X^{k}+f_G">
 
 where 
 
-$$B_G=(D-L)^{-1}U$$
+<img src="http://www.forkosh.com/mathtex.cgi? \Large B_G=(D-L)^{-1}U">
 
-$$f_G=(D-L)^{-1}b$$
+<img src="http://www.forkosh.com/mathtex.cgi? \Large f_G=(D-L)^{-1}b">
 
-$$A=D+L+U$$
+<img src="http://www.forkosh.com/mathtex.cgi? \Large A=D+L+U">
 
